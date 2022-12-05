@@ -1,0 +1,360 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+    background-color:#f3f3f3;
+}
+.inner_products{
+    width: 90%;
+    height: 100vh;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0,0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.details_images{
+    width: 100%;
+    height: 100vh;
+    background-color: #e3e3e3;
+    position: relative;
+    
+}
+ img{
+   width: 100%;
+   height: 300px;
+   border-radius: 50%;
+   border: solid 1px gray;
+    object-fit: cover;
+}
+.details{
+    position: relative;
+    background-color: wheat;
+    height: 100vh;
+}
+.icons{
+    width: 70px;
+    height: 32%;
+    position:absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+
+}
+.icons:hover{
+    box-shadow: 0px 2px 20px;
+}
+.icons a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+.icons i{
+    text-align: center;
+    padding:  15px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+
+}
+.icons i:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 3s;
+
+}
+.innerproducts{
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 30px;
+  
+}
+.innerproducts h1{
+    font-size: 22px;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.innerproducts .span1{
+    font-size: 18px;
+    color: #888;
+    font-weight: 100;
+}
+
+.innerproducts .span2{
+    font-size: 18px;
+    color: black;
+    font-weight: 100;
+}
+.text p{
+    color: #888;
+    font-size: 15px;
+}
+.text .size span{
+    font-size: 22px;
+    text-decoration: underline;
+
+}
+.inputs{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.inputs .ooo{
+    padding: 0px 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+   margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.ppp:checked + .ooo{
+    background-color: black;
+    color: white;
+}
+.ppp{
+    display: none;
+}
+.btns{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:70px auto;
+
+}
+.btn1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn1:hover{
+    box-shadow: 0px 2px 20px yellowgreen ; 
+    transition: 1s;
+}
+.btn2{
+    background-color: gray;
+    color: black;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+   
+}
+.btn2:hover{
+    box-shadow: 0px 2px 20px black ; 
+    transition: 1s;
+}
+.que{
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    
+}
+.que p{
+  cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+.sy{
+    width: 90%;
+    background-color: black;
+    text-align: center;
+    box-shadow: 0px 2px 20px yellow;
+    padding: 10px;
+color: white;
+margin: auto;
+margin-top: 50px;
+font-size: 20px;
+border-radius: 5px;
+}
+.sy span{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+#count{
+    width: 40px;
+    height: 30px;
+    margin: auto;
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0px;
+    border: solid 1px transparent;
+    text-shadow: 0px 2px 20px black;
+    margin-top: 70px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 20px black;
+}
+@media(min-width:200px)
+{
+  .inner_products{
+      display: grid;
+     grid-template-columns: 1fr;
+     margin: 20px auto;
+ 
+   }
+   .icons{
+       height: 38%;
+       width: 30px;
+   }
+   .sy{
+       font-size: 12px;
+   }
+   .sy span{
+       font-size: 12px;
+   }
+   .innerproducts h1{
+       font-size: 12px;
+   }
+   .innerproducts p{
+       font-size: 10px;
+       margin-top: -20px;
+   }
+   .btns{
+       margin-top: 50px;
+       width: 90%;
+   }
+   .btn1{
+       width: 80%;
+       font-size: 5px;
+   }
+   .btn2{
+      width: 90%;
+      font-size: 5px;
+  }
+}
+@media(min-width:480px){
+
+    .inner_products{
+       display: flex;
+       flex-direction: column;
+  
+    }
+  
+    .sy{
+      width: 100%;
+      font-size: 18px;
+  }
+  .icons{
+      width: 40px;
+      height: 40%;
+  
+  }
+  #count{
+      margin-bottom: 50px;
+  }
+  .btns{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+  .btn1{
+      width: 100%;
+      height: 30px;
+      font-size: 14px;
+   
+  }
+  .btn2{
+   width: 100%;
+   height: 30px;
+   font-size: 14px;
+  
+  }
+  .que{
+      margin-right: 20px;
+  }
+  }
+ 
+     @media(min-width:600px)
+  {
+    .inner_products{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+   
+     }
+     .sy{
+        width: 100%;
+        font-size: 20px;
+        margin-top: 25%;
+    }
+    .btns{
+        margin-top: 25%;
+    }
+    .size{
+        margin-top: 10%;
+    }
+
+  }
+  @media(min-width:768px)
+  {
+    .inner_products{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+   
+     }
+     .sy span{
+         font-size: 20px;
+         color: aqua;
+         background-color: red;
+     }
+     .icons{
+         height: 35%;
+         padding: 10px 15px;
+         width: 50px;
+     }
+     .text p{
+         font-size: 18px;
+     }
+     .innerproducts h1{
+         font-size: 22px;
+     }
+     .size {
+margin-top: -20px;
+     }
+     .btns{
+         margin-top: 50px;
+     }
+     .btn1{
+         font-size: 18px;
+        
+     }
+     .btn2{
+        font-size: 18px;
+    
+    }
+    .innerproducts .span2{
+        font-size: 20px;
+     font-weight: 600;
+    }
+  }
+ 
+ 
+
+    
+
+
+
